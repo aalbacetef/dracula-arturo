@@ -127,7 +127,7 @@ StScrollBar {
   -barlevel-active-background-color: $teal;
   -barlevel-active-border-color: $lime;
   -barlevel-border-width: 0;
-  -barlevel-handle-radius: 6px; 
+  -barlevel-handle-radius: 6px;
   -barlevel-overdrive-color: $teal;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
@@ -527,11 +527,11 @@ StScrollBar {
     border-radius: 0px 0px 6px 6px;
   }
 
-  .popup-menu-content { 
+  .popup-menu-content {
     background-color: $main_dark;
     border-radius: 10px;
     border: none;
-    padding: 6px; 
+    padding: 6px;
   }
   .popup-menu-item {
     spacing: 6px;
@@ -543,13 +543,13 @@ StScrollBar {
     &:active,
     &.selected { background-color: lighten($base_color, 3%) !important; color: $fg_color; }
 
-    &:checked { 
+    &:checked {
       background-color: lighten($base_color, 7%) !important;
       border-radius: 6px 6px 0px 0px;
       box-shadow: none;
     }
     &:insensitive { color: transparentize($fg_color,.5); }
-    
+
   }
 
   .popup-inactive-menu-item { //all icons and other graphical elements
@@ -641,7 +641,7 @@ StScrollBar {
     -barlevel-background-color: $gray;
     -barlevel-active-background-color: $selected_bg_color;
     -barlevel-overdrive-color: $red;
-    -barlevel-overdrive-separator-width: 0.2em; 
+    -barlevel-overdrive-separator-width: 0.2em;
   }
   .level-bar {
     background-color: $selected_bg_color;
@@ -804,6 +804,7 @@ StScrollBar {
   &.lock-screen {
     background-color: transparent;
   }
+
 
   #panelLeft, #panelCenter { // spacing between activities<>app menu and such
     spacing: 4px;
@@ -1118,7 +1119,7 @@ StScrollBar {
       /* Message list */
       .message-list {
         border: none;
-        
+
         .message-title, .message-content, .message-body {
           color: darken($fg_color, 2%);
         }
@@ -1149,14 +1150,14 @@ StScrollBar {
         }
 
         .message {
-          &:hover,&:focus { 
+          &:hover,&:focus {
             background-color: lighten($base_color, 3%);
             box-shadow: 2px 0px 0px 0px $teal inset;
             border-radius: 1px 7px 7px 1px;
           }
           background: $base_color;
           border: 1px solid $borders_color;
-          border-radius: 7px; 
+          border-radius: 7px;
           box-shadow: none;
         }
 
@@ -1183,7 +1184,7 @@ StScrollBar {
             /* HACK: the label should be baseline-aligned with a 1em label,
                      fake this with some bottom padding */
             padding-bottom: 0.13em;
-           
+
           }
 
           .message-secondary-bin > StIcon {
@@ -1192,7 +1193,7 @@ StScrollBar {
 
           .message-title {
             //color: darken($fg_color,5%);
-            
+
           }
 
           .message-content {
@@ -1227,7 +1228,7 @@ StScrollBar {
 
    /* World clocks */
 .world-clocks-button {
-  
+
   // city label
   .world-clocks-city {
     color: $fg_color;
@@ -1300,7 +1301,7 @@ StScrollBar {
   .system-menu-action {
 
     color: $fg_color;
-   
+
     border-radius: 32px; /* wish we could do 50% */
     border: 1px solid $borders_color;
     background: darken($bg_color, 3%);
@@ -1313,7 +1314,7 @@ StScrollBar {
     }
     &:active {
        background-color: darken($selected_bg_color, 10%);
-       color: $selected_fg_color; 
+       color: $selected_fg_color;
        border: 1px solid darken($selected_bg_color, 10%);
       }
 
@@ -1360,10 +1361,10 @@ StScrollBar {
     background-color: darken($osd_bg_color, 5%);
   }
 }
-  .window-close {
-    -shell-close-overlap: 16px;
-    &:rtl { -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5); }
-  }
+.window-close {
+  -shell-close-overlap: 16px;
+  &:rtl { -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5); }
+}
 
 /* NETWORK DIALOGS */
 
@@ -1458,7 +1459,7 @@ StScrollBar {
 
   //search results
 
-  %search-section-content-item {  
+  %search-section-content-item {
     &:focus,
     &:hover,
     &:selected {
@@ -1483,13 +1484,13 @@ StScrollBar {
   }
 
   .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
-  .search-section-content { 
+  .search-section-content {
     background-color: transparent;
     border-radius: 0;
     border: none;
     box-shadow: none;
     // This is the space between the provider icon and the results container
-    spacing: 32px; 
+    spacing: 32px;
   }
   .search-statustext { // "no results"
     @extend %status_text;
@@ -1569,12 +1570,12 @@ StScrollBar {
   .app-well-app.app-folder,
   .show-apps,
   .grid-search-result {
-    
+
     border: none;
     & .overview-icon {
       @extend %icon_tile;
     }
-    
+
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
@@ -1669,19 +1670,19 @@ StScrollBar {
       border: 1px solid $borders_color;
     }
 
-    &:hover .page-indicator-icon {  
+    &:hover .page-indicator-icon {
       background-image: none;
-      background-color: rgba(255, 255, 255, 0.5); 
+      background-color: rgba(255, 255, 255, 0.5);
     }
-    &:active .page-indicator-icon { 
+    &:active .page-indicator-icon {
       background-image: none;
       background-color: rgba(255, 255, 255, 0.7);
       margin: 0;
     }
-    &:checked .page-indicator-icon{ 
+    &:checked .page-indicator-icon{
       background-image: none;
       background-color: #FFFFFF;
-      transition-duration: 0.3s; 
+      transition-duration: 0.3s;
       transition-timing-function: ease-in-out;
     }
   }
